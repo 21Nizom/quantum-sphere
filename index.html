@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Core Sphere v2.0</title>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Quantum Sphere v3.0 - Realistic Space</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; }
+        #canvas { width: 100vw; height: 100vh; display: block; }
+        /* Интерфейс как в первой сфере */
+        #interface-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: rgba(0, 255, 255, 0.8);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            pointer-events: none;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+    </style>
 </head>
 <body>
-    <div class="interface-overlay">
-        <div class="top-bar">SYSTEM: ACTIVE // CORE_STABLE</div>
-        <div class="bottom-bar">SHFT_COLOR: ON_CLICK</div>
+    <div id="interface-overlay">
+        // SYSTEM: ACTIVE // ORBITAL STABLE<br>
+        // TARGET: EARTH_SYSTEM<br>
+        // STATUS: OPERATIONAL
     </div>
-    <div class="vignette"></div>
-    <canvas id="canvas"></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
